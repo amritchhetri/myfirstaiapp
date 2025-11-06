@@ -1,7 +1,6 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_classic.chains import LLMChain
-from langchain import PromptTemplate
-
+from langchain_core.prompts import PromptTemplate
 import streamlit as st
 import os
 
@@ -34,4 +33,3 @@ number = st.number_input("Number of tweets", min_value = 1, max_value = 10, valu
 if st.button("Generate"):
     tweets = tweet_chain.invoke({"number" : number, "topic" : topic})
     st.write(tweets.content)
-    
