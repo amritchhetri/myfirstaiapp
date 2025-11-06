@@ -5,7 +5,7 @@ from langchain import PromptTemplate
 import streamlit as st
 import os
 
-os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
+os.environ['AIzaSyCSii4hKkEOsK0ft4zheYjTQ6JMipAnPzg'] = st.secrets['AIzaSyCSii4hKkEOsK0ft4zheYjTQ6JMipAnPzg']
 
 # Create prompt template for generating tweets
 
@@ -23,7 +23,7 @@ tweet_chain = tweet_prompt | gemini_model
 
 import streamlit as st
 
-st.header("Tweet Generator - SATVIK")
+st.header("Tweet Generator - Amrit")
 
 st.subheader("Generate tweets using Generative AI")
 
